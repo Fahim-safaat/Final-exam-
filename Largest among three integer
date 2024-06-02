@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+   int a[3],i,n;
+   printf("Enter three numbers: ");
+
+   for(i=0;i<3;i++){
+    scanf("%d", &a[i]);
+   }
+   if (a[0]>a[1] && a[0]>a[2]){
+   printf("%d is the largest numbers: ", a[0]);
+   }
+   else if (a[1]>a[0] && a[1]>a[2]){
+   printf("%d is the largest numbers: ", a[1]);
+   }
+   else{
+    printf("%d is the largest numbers: ", a[2]);
+   }
+
+return 0;
+}
