@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+  int a[100],i,n,b[100];
+  printf("Enter array size : ");
+  scanf("%d", &n);
+  printf("Enter array element : ");
+  for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+
+  }
+for(i=0;i<n;i++){
+    b[i] = a[n-1-i];
+}
+  printf("Reversed Array elements : ");
+  for(i=0;i<n;i++){
+    printf("%d  ", b[i]);
+  }
+
+
+return 0;
+}
+
