@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+struct Student
+{
+    char Name[100];
+    int ID;
+    float CGPA;
+};
+
+int main()
+{
+    struct Student students[3];
+    for(int i = 1; i <=3; i++)
+    {
+        printf("Enter name for student %d: ", i); 
+        scanf("%s", &students[i].Name);
+        printf("Enter ID for student %d: ", i); 
+        scanf("%d", &students[i].ID);
+        printf("Enter CGPA for student %d: ", i); 
+        scanf("%f", &students[i].CGPA);
+    }
+
+    for(int i = 1; i <=3; i++) 
+    {
+        printf("Details for student %d:\n", i);
+        printf("Name: %s\n", students[i].Name); 
+        printf("ID: %d\n", students[i].ID); 
+        printf("CGPA: %f\n", students[i].CGPA); 
+    }
+
+    return 0;
+}
