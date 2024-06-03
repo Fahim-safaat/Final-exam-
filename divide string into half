@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[101], first_half[51], second_half[51], concatenated[201];
+    int length;
+
+    printf("Enter a string of even length: ");
+    scanf("%s", s);
+
+    length = strlen(s);
+    if (length % 2 != 0) {
+        printf("The length of the string is not even.\n");
+        return 1;
+    }
+
+    strncpy(first_half, s, length / 2);
+    first_half[length / 2] = '\0'; 
+
+    strcpy(second_half, s + length / 2); 
+
+    printf("First half : %s\n", first_half);
+    printf("Secondhalf: %s\n", second_half);
+
+}
